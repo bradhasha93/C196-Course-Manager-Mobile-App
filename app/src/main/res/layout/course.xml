@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/courseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Course Title"
+        app:layout_constraintStart_toEndOf="@+id/courseTitleImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/courseTitleImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/course" />
+
+    <ImageView
+        android:id="@+id/courseStatusImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseTitleImageView"
+        app:srcCompat="@drawable/status" />
+
+    <TextView
+        android:id="@+id/courseStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:text="Status"
+        app:layout_constraintStart_toEndOf="@+id/courseStatusImageView"
+        app:layout_constraintTop_toBottomOf="@+id/courseTitle" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseStatus" />
+
+    <TextView
+        android:id="@+id/courseStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Start Date: MM/DD/YYYY"
+        app:layout_constraintEnd_toStartOf="@+id/courseStartDateAlert"
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+    <ImageView
+        android:id="@+id/courseStartDateAlert"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5"
+        app:srcCompat="@drawable/alerts_on" />
+
+    <TextView
+        android:id="@+id/courseEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="End Date: MM/DD/YYYY"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toStartOf="@+id/courseEndDateAlert"
+        app:layout_constraintTop_toBottomOf="@+id/courseStartDate" />
+
+    <ImageView
+        android:id="@+id/courseEndDateAlert"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseStartDateAlert"
+        app:srcCompat="@drawable/alerts_off" />
+
+    <ImageView
+        android:id="@+id/assessmentCountImageView"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/assessment" />
+
+    <ImageView
+        android:id="@+id/mentorCountImageView"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/mentorsCount"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentCountImageView"
+        app:srcCompat="@drawable/mentor" />
+
+    <TextView
+        android:id="@+id/assessmentsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/assessmentCountImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mentorsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="10dp"
+        android:text="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentsCount" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseEndDate" />
+
+    <TextView
+        android:id="@+id/viewNotesTextView"
+        android:layout_width="119dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="View Notes"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseStatus" />
+</android.support.constraint.ConstraintLayout>

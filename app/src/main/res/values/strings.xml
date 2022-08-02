@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">C196Scheduler</string>
+    <string name="home_mentors_btn">Mentors</string>
+    <string name="home_assessments_btn">Assessments</string>
+    <string name="home_courses_btn">Courses</string>
+    <string name="home_terms_btn">Terms</string>
+
+    <!-- Mentors Overview -->
+    <string name="mentors_overview_title">Mentors</string>
+
+    <!-- Mentors Detail -->
+    <string name="mentors_detail_title">Manage Mentor</string>
+    <string name="mentors_detail_name">Enter name</string>
+    <string name="mentors_detail_phone">Enter phone number</string>
+    <string name="mentors_detail_email">Enter email</string>
+
+    <!-- Assessments Overview -->
+    <string name="assessments_overview_title">Assessments</string>
+
+    <!-- Assessments Detail -->
+    <string name="assessments_detail_objective_title">Objective</string>
+    <string name="assessments_detail_performance_title">Performance</string>
+    <string name="assessments_detail_title">Manage Assessment</string>
+    <string name="assessments_detail_title_input">Enter a title</string>
+    <string name="date_format_hint">MM/DD/YYYY</string>
+    <string name="assessments_detail_due_date_title">Due Date:</string>
+    <string name="assessments_detail_goal_date_title">Goal Date:</string>
+    <string name="assessments_detail_goal_date_alert">Goal Date Alert:</string>
+
+    <!-- Courses Overview -->
+    <string name="courses_overview_title">Courses</string>
+
+    <!-- Courses Detail -->
+    <string name="courses_detail_title">Manage Course</string>
+    <string name="courses_detail_title_input">Enter a title</string>
+    <string name="courses_detail_status_input">Enter a status</string>
+    <string name="courses_detail_start_date_title">Start Date:</string>
+    <string name="courses_detail_start_date_alert">Start Date Alert:</string>
+    <string name="courses_detail_end_date_title">End Date:</string>
+    <string name="courses_detail_end_date_alert">End Date Alert:</string>
+    <string name="courses_detail_notes_title">Notes</string>
+    <string name="courses_detail_notes_input">Enter notes</string>
+    <string name="courses_detail_notes_share_btn_title">Share</string>
+    <string name="courses_detail_assessments_title">Assessments (choose all that apply)</string>
+    <string name="courses_detail_mentors_title">Mentors (choose all that apply)</string>
+
+    <!-- Terms Overview -->
+    <string name="terms_overview_title">Terms</string>
+
+    <!-- Terms Detail -->
+    <string name="terms_detail_title">Manage Term</string>
+    <string name="terms_detail_title_input">Enter a title</string>
+    <string name="terms_detail_start_date_title">Start Date:</string>
+    <string name="terms_detail_end_date_title">End Date:</string>
+    <string name="terms_detail_courses_title">Courses (select all that apply)</string>
+
+
+</resources>
